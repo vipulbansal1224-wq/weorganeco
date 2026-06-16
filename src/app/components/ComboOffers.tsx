@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import styles from './ComboOffers.module.css';
 
 const offers = [
@@ -10,7 +9,7 @@ const offers = [
     subtitle: 'Pure Honey & Moringa Noodles',
     discount: 'Flat 20% OFF',
     img: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=800&q=80',
-    color: '#E6F4EA' // Light Green
+    color: '#E6F4EA'
   },
   {
     id: 2,
@@ -18,7 +17,7 @@ const offers = [
     subtitle: 'Millet Noodles & Black Rice',
     discount: 'Buy 2 Get 1 Free',
     img: 'https://images.unsplash.com/photo-1590137785360-0322247fbdb3?w=800&q=80',
-    color: '#FEF3C7' // Light Yellow
+    color: '#FEF3C7'
   }
 ];
 
@@ -41,12 +40,11 @@ export default function ComboOffers() {
                 <button className={styles.shopBtn}>Shop Now</button>
               </div>
               <div className={styles.imageWrapper}>
-                <Image 
+                <img 
                   src={offer.img} 
                   alt={offer.title} 
-                  fill 
                   className={styles.image}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -56,3 +54,4 @@ export default function ComboOffers() {
     </section>
   );
 }
+

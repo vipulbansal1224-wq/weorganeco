@@ -11,7 +11,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: '#fdfbfb', padding: '60px 24px' }}>
+    <div style={{ minHeight: '100vh', background: '#fdfbfb', paddingTop: '160px', paddingLeft: '24px', paddingRight: '24px', paddingBottom: '60px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         
         {/* Header Section */}

@@ -3,191 +3,218 @@
         {
             "title": "Moringa Instant Noodles (Murungai) 60g",
             "description": "Premium Moringa Instant Noodles loaded with nutrients, protein, and dietary fiber. A healthy alternative to regular noodles, crafted with pure organic moringa leaves.",
-            "img": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=600&q=80",
             "categorySlug": "noodles",
-            "categoryTitle": "Noodles"
+            "categoryTitle": "Organic Noodles",
+            "price": "45",
+            "slug": "moringa-instant-noodles"
         },
         {
             "title": "Forest Honey (Malai Thean)",
             "description": "Pure, unadulterated Forest Honey collected from deep woods. Rich in antioxidants and natural enzymes, offering a robust and earthy flavor profile.",
-            "img": "https://images.unsplash.com/photo-1587049352847-4d4b126a71e5?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1587049352847-4d4b126a71e5?w=600&q=80",
             "categorySlug": "honey",
-            "categoryTitle": "Honey"
+            "categoryTitle": "Pure Honey",
+            "price": "399",
+            "slug": "forest-honey"
         },
         {
             "title": "Desi Cow Ghee (Kangayamnattu)",
             "description": "Authentic Desi Cow Ghee prepared using the traditional Bilona method. Golden, aromatic, and packed with essential fatty acids for your daily health.",
-            "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80",
             "categorySlug": "ghee",
-            "categoryTitle": "Ghee"
+            "categoryTitle": "Desi Ghee",
+            "price": "699",
+            "slug": "desi-cow-ghee"
         },
         {
             "title": "Black Rice Instant Noodles 60g",
             "description": "Delicious Black Rice Noodles (Karuppu Kavuni) rich in antioxidants and anthocyanins. Quick to cook and perfectly healthy for the whole family.",
-            "img": "https://images.unsplash.com/photo-1552611052-33e04de081de?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1552611052-33e04de081de?w=600&q=80",
             "categorySlug": "noodles",
-            "categoryTitle": "Noodles"
+            "categoryTitle": "Organic Noodles",
+            "price": "55",
+            "slug": "black-rice-noodles"
         },
         {
             "title": "Organic Rose Gulkand",
             "description": "Traditional sweet preserve of rose petals. A natural coolant that aids digestion and rejuvenates the body with its exquisite floral aroma.",
-            "img": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80",
             "categorySlug": "sweets",
-            "categoryTitle": "Sweets"
+            "categoryTitle": "Sweets & Preserves",
+            "price": "249",
+            "slug": "organic-rose-gulkand"
         },
         {
             "title": "Foxtail Millet Noodles 60g",
             "description": "Healthy Foxtail Millet (Thinai) Noodles. Gluten-free, diabetic-friendly, and packed with complex carbohydrates for sustained energy.",
-            "img": "https://images.unsplash.com/photo-1590137785360-0322247fbdb3?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1590137785360-0322247fbdb3?w=600&q=80",
             "categorySlug": "noodles",
-            "categoryTitle": "Noodles"
+            "categoryTitle": "Organic Noodles",
+            "price": "45",
+            "slug": "foxtail-millet-noodles"
         },
         {
             "title": "Pearl Millet Semiya (Kambu) 250g",
             "description": "Nutritious Pearl Millet Vermicelli. Perfect for a healthy breakfast upma or sweet payasam. Rich in iron and highly digestible.",
-            "img": "https://images.unsplash.com/photo-1555126634-323283e090f1?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1555126634-323283e090f1?w=600&q=80",
             "categorySlug": "noodles",
-            "categoryTitle": "Noodles"
+            "categoryTitle": "Organic Noodles",
+            "price": "65",
+            "slug": "pearl-millet-semiya"
         },
         {
             "title": "Special Forest Honey Combo",
             "description": "A curated combo of wild, multi-floral forest honey. The perfect organic gift pack for health enthusiasts.",
-            "img": "https://images.unsplash.com/photo-1620189507195-68309c04c4d0?w=800&q=80",
+            "img": "https://images.unsplash.com/photo-1620189507195-68309c04c4d0?w=600&q=80",
             "categorySlug": "honey",
-            "categoryTitle": "Honey"
+            "categoryTitle": "Pure Honey",
+            "price": "999",
+            "slug": "special-honey-combo"
         },
         {
             "title": "Organic Basmati Rice (White)",
-            "description": "Organic White Basmati rice is a long-grain, fragrant rice that is used in most Middle Eastern dishes. It has a&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/basmati-rice-white-1.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic White Basmati rice is a long-grain, fragrant rice used in most traditional dishes. Known for its delicate aroma and fluffy texture.",
+            "img": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&q=80",
+            "categorySlug": "rice",
+            "categoryTitle": "Traditional Grains",
+            "price": "189",
+            "slug": "basmati-rice-white"
         },
         {
             "title": "Organic Arhar Dal",
-            "description": "Organic Arhar Dal, popularly known as Toor dal is\u252c\u00e1one of the simplest dals. It is the best choice for families&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/arhar-dal-1-1.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Arhar Dal, popularly known as Toor dal, is one of the simplest dals. The best choice for families seeking pure nutrition.",
+            "img": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80",
+            "categorySlug": "pulses",
+            "categoryTitle": "Organic Pulses",
+            "price": "149",
+            "slug": "organic-arhar-dal"
         },
         {
             "title": "Organic Basmati Rice (Brown)",
-            "description": "Organic Brown Basmati Rice is a great source of protein, calcium and iron. Apart from these, a bowl of Organic&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/basmati-rice-brown-1-1.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Brown Basmati Rice is a great source of protein, calcium and iron. A healthier, fiber-rich alternative to white rice.",
+            "img": "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600&q=80",
+            "categorySlug": "rice",
+            "categoryTitle": "Traditional Grains",
+            "price": "219",
+            "slug": "basmati-rice-brown"
         },
         {
             "title": "Organic Black Pepper Powder",
-            "description": "Organic Black Pepper Whole is filled with protein, iron and calcium. Apart from these nutrients, Organic Black Pepper Whole also&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/black-pepper-powder.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Black Pepper packed with protein, iron and calcium. Adds a bold kick to any dish while boosting your immunity naturally.",
+            "img": "https://images.unsplash.com/photo-1599909533601-aa22c8751f78?w=600&q=80",
+            "categorySlug": "spices",
+            "categoryTitle": "Organic Spices",
+            "price": "129",
+            "slug": "black-pepper-powder"
         },
         {
             "title": "Organic Turmeric Powder",
-            "description": "",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/turmeric-powder.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Pure golden Turmeric Powder, stone-ground from organically grown turmeric roots. A powerful anti-inflammatory and antioxidant superfood.",
+            "img": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&q=80",
+            "categorySlug": "spices",
+            "categoryTitle": "Organic Spices",
+            "price": "99",
+            "slug": "turmeric-powder"
         },
         {
             "title": "Organic Red Chilli Powder",
-            "description": "",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/red-chilli-powder.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Vibrant, naturally dried red chilli powder with perfect heat and rich colour. Adds authentic spice to every meal without artificial additives.",
+            "img": "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?w=600&q=80",
+            "categorySlug": "spices",
+            "categoryTitle": "Organic Spices",
+            "price": "109",
+            "slug": "red-chilli-powder"
         },
         {
             "title": "Organic Jaggery Powder",
-            "description": "ORGANIC\u252c\u00e1 Jaggery Powder containing no chemical additive and made from organic certified sugar cane. This golden-brown delicacy is highly nutritious,&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/jaggery-powder.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Jaggery Powder with no chemical additives, made from certified organic sugar cane. A golden-brown, highly nutritious natural sweetener.",
+            "img": "https://images.unsplash.com/photo-1604431696980-07e518647610?w=600&q=80",
+            "categorySlug": "sweeteners",
+            "categoryTitle": "Natural Sweeteners",
+            "price": "89",
+            "slug": "jaggery-powder"
         },
         {
             "title": "Organic Jaggery",
-            "description": "Organic Jaggery (Gud) directly from the farms of Gujarat. This Jaggery is unrefined and chemical free and prepared from hand&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/jaggery.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Jaggery (Gud) directly from the farms of Gujarat. Unrefined, chemical-free, and prepared from hand-pressed organic sugarcane.",
+            "img": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80",
+            "categorySlug": "sweeteners",
+            "categoryTitle": "Natural Sweeteners",
+            "price": "79",
+            "slug": "organic-jaggery"
         },
         {
             "title": "Organic Gram Flour",
-            "description": "Organic\u252c\u00e1Gram flour\u252c\u00e1made from Bengal gram or\u252c\u00e1chana dal. It does not contain gluten making it safe for individuals with\u252c\u00e1celiac disease\u252c\u00e1or gluten&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/gram-flour.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Gram Flour made from Bengal gram (chana dal). Gluten-free and safe for individuals with celiac disease.",
+            "img": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80",
+            "categorySlug": "flour",
+            "categoryTitle": "Organic Flour",
+            "price": "79",
+            "slug": "gram-flour"
         },
         {
             "title": "Organic Urad Whole",
-            "description": "",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/urad-whole.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
-        },
-        {
-            "title": "Organic Wheat Daliya",
-            "description": "",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/wheat-daliya.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
-        },
-        {
-            "title": "Organic White Poha",
-            "description": "",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2022\/04\/white-poha.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
-        },
-        {
-            "title": "Organic Channa (Whole)",
-            "description": "Organic brings to you a Channa\u252c\u00e1 that is free from any adulteration and coloring. This food item is organically grown,&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/channa-whole.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
-        },
-        {
-            "title": "Organic Kabul Channa\/Chickpea",
-            "description": "Organic Kabuli Chana is full of essential nutrients and high in protein. It is produced through organic farming, which makes&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/kabul-channa.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
-        },
-        {
-            "title": "Organic Masoor (Whole)",
-            "description": "Organic Masoor dal lentils fulfill your daily protein requirements and can be used as everyday meal ingredients. Red lentils are&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/masoor-whole.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
-        },
-        {
-            "title": "Organic Mix Dal",
-            "description": "Rich in dietary fibre, low in cholesterol and saturated fats, it has the goodness and nutritional properties of five lentils&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/mix-dal.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Premium whole urad dal, organically grown and sun-dried. Rich in protein and perfect for making authentic dal makhani.",
+            "img": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80",
+            "categorySlug": "pulses",
+            "categoryTitle": "Organic Pulses",
+            "price": "139",
+            "slug": "urad-whole"
         },
         {
             "title": "Organic Moong (Whole)",
-            "description": "Organic Moong Dal Whole is full of iron, calcium and protein. Along with these nutrients, a bowl of Organic Moong&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/moong-whole.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Moong Dal Whole is full of iron, calcium and protein. Light, easily digestible, and perfect for everyday cooking.",
+            "img": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80",
+            "categorySlug": "pulses",
+            "categoryTitle": "Organic Pulses",
+            "price": "159",
+            "slug": "moong-whole"
         },
         {
             "title": "Organic Rajma Chitra",
-            "description": "Organic Rajma Chitra is full of iron, calcium and protein. Along with these nutrients, a bowl of Organic Rajma Chitra&hellip;",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/rajma-chitra.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "description": "Organic Rajma Chitra full of iron, calcium and protein. These beautiful speckled beans make the perfect comfort meal.",
+            "img": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80",
+            "categorySlug": "pulses",
+            "categoryTitle": "Organic Pulses",
+            "price": "169",
+            "slug": "rajma-chitra"
         },
         {
-            "title": "Organic Red Rajma",
-            "description": "",
-            "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/red-rajma.jpg",
-            "categorySlug": "uncategorized",
-            "categoryTitle": "Uncategorized"
+            "title": "Wild Honey (Kombu Thean)",
+            "description": "Rare wild honey harvested from ancient forests. Known for its medicinal properties, deep amber colour, and complex, layered sweetness.",
+            "img": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&q=80",
+            "categorySlug": "honey",
+            "categoryTitle": "Pure Honey",
+            "price": "549",
+            "slug": "wild-honey"
+        },
+        {
+            "title": "Moringa Honey",
+            "description": "Single-origin Moringa Honey with the combined benefits of moringa and raw honey. An immunity powerhouse with a mild, sweet taste.",
+            "img": "https://images.unsplash.com/photo-1587049352847-4d4b126a71e5?w=600&q=80",
+            "categorySlug": "honey",
+            "categoryTitle": "Pure Honey",
+            "price": "449",
+            "slug": "moringa-honey"
+        },
+        {
+            "title": "Organic Wheat Daliya",
+            "description": "Wholesome organic broken wheat for healthy porridge and khichdi. High in fiber, easy to digest, and perfect for all ages.",
+            "img": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80",
+            "categorySlug": "grains",
+            "categoryTitle": "Traditional Grains",
+            "price": "69",
+            "slug": "wheat-daliya"
+        },
+        {
+            "title": "Organic White Poha",
+            "description": "Light, fluffy organic flattened rice for quick and nutritious breakfast. A staple of Indian kitchens made the pure way.",
+            "img": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&q=80",
+            "categorySlug": "grains",
+            "categoryTitle": "Traditional Grains",
+            "price": "59",
+            "slug": "white-poha"
         }
     ]
 }

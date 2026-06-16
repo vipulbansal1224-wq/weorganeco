@@ -19,17 +19,20 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <main>
+    <main style={{ paddingTop: '140px' }}>
       <div className="page-banner" style={{
         background: page.bannerImage ? `linear-gradient(rgba(44, 94, 59, 0.8), rgba(44, 94, 59, 0.8)), url(${page.bannerImage})` : 'var(--light-green)',
         backgroundSize: "cover",
         backgroundPosition: "center",
-        color: page.bannerImage ? '#fff' : 'inherit'
+        color: page.bannerImage ? '#fff' : 'inherit',
+        padding: '60px 24px',
+        textAlign: 'center' as const,
+        borderRadius: '0 0 24px 24px'
       }}>
-        <h1 style={{ color: page.bannerImage ? '#fff' : 'var(--primary-green)' }}>{page.title}</h1>
+        <h1 style={{ color: page.bannerImage ? '#fff' : 'var(--primary)', fontSize: '36px', fontWeight: '800' }}>{page.title}</h1>
       </div>
 
-      <div className="container" style={{ padding: "4rem 2rem", minHeight: "50vh" }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: "60px 24px", minHeight: "50vh" }}>
         <div dangerouslySetInnerHTML={{ __html: page.content || "" }} />
       </div>
     </main>
