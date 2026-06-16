@@ -1,5 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
+import ProductCard from "../components/ProductCard";
+import styles from "../page.module.css";
 
 export default async function ProductsPage() {
   const productsPath = path.join(process.cwd(), "src/data/products.json");
@@ -10,38 +12,29 @@ export default async function ProductsPage() {
   } catch(e) {}
 
   return (
-    <main>
-      <div className="page-banner">
-        <h1>Our Organic Products</h1>
-      </div>
+    <main style={{ background: '#FAFAF9', minHeight: '100vh', paddingTop: '140px' }}>
+      <div className={styles.container}>
+        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+          <h1 style={{ fontSize: '40px', fontWeight: '800', color: 'var(--foreground)' }}>Our Organic Shop</h1>
+          <p style={{ fontSize: '18px', color: '#4a5568', marginTop: '10px' }}>Browse our complete selection of premium, hand-picked organic products.</p>
+        </div>
 
-      <div className="container" style={{ padding: "4rem 2rem", minHeight: "50vh" }}>
-        
         {(Array.from(new Set((productsData.products || []).map((p: any) => p.categoryTitle))) as string[]).map((cat: any) => {
           const categoryProducts = productsData.products.filter((p: any) => p.categoryTitle === cat);
           
           if (categoryProducts.length === 0) return null;
 
           return (
-            <div key={cat} style={{ marginBottom: "4rem" }}>
-              <h2 style={{ fontSize: "2rem", marginBottom: "2rem", borderBottom: "2px solid #e9f2eb", paddingBottom: "1rem" }}>{cat}</h2>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "2rem" }}>
+            <div key={cat} style={{ marginBottom: "60px" }}>
+              <h2 style={{ fontSize: "28px", fontWeight: '700', marginBottom: "24px", color: 'var(--secondary)' }}>{cat}</h2>
+              <div className={styles.grid}>
                 {categoryProducts.map((p: any, i: number) => (
-                  <div key={i} style={{ background: "#fff", borderRadius: "8px", overflow: "hidden", boxShadow: "0 4px 10px rgba(0,0,0,0.05)", border: "1px solid #f0f0f0" }}>
-                    <div style={{ height: "250px", overflow: "hidden", background: "#f9f9f9", display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
-                      <img src={p.img || "/placeholder.png"} alt={p.title} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }} />
-                    </div>
-                    <div style={{ padding: "1.5rem", textAlign: "center" }}>
-                      <h4 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>{p.title}</h4>
-                      <p style={{ color: "#666", fontSize: "0.9rem" }}>{p.description}</p>
-                    </div>
-                  </div>
+                  <ProductCard key={i} product={p} />
                 ))}
               </div>
             </div>
           );
         })}
-
       </div>
     </main>
   );
