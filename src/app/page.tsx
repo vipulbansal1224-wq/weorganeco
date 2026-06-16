@@ -17,7 +17,7 @@ export default async function Home() {
   } catch(e) {}
 
   // Only show the first 4 products on the home page as requested
-  const featuredProducts = productsData.products.slice(0, 4);
+  const featuredProducts = productsData.products.slice(0, 8);
 
   return (
     <main className={styles.main}>

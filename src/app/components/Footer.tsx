@@ -8,7 +8,7 @@ export default function Footer() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginBottom: '40px' }}>
           
           <div>
-            <img src="/wp-content/uploads/2022/04/weorganeco_logo-1.png" alt="WeOrganeco" style={{ height: '60px', marginBottom: '20px', filter: 'brightness(0) invert(1)' }} />
+            <img src="/wp-content/uploads/2022/04/weorganeco_logo-1.png" alt="WeOrganeco" style={{ height: '60px', marginBottom: '20px', background: 'white', padding: '10px', borderRadius: '8px' }} />
             <p style={{ color: '#a0aec0', lineHeight: '1.6', marginBottom: '20px' }}>
               We strongly believe in Organic Farming. We want to bring Organic to each and every table across the world and hence started this journey with exporting high quality organic foods to other countries from India.
             </p>
