@@ -5,8 +5,8 @@ import styles from './ImageSlider.module.css';
 const sliderImages = [
   '/wp-content/uploads/2022/05/all-product.-2.jpg',
   '/wp-content/uploads/2022/05/IMG_4100.jpg',
-  '/wp-content/uploads/2022/05/IMG_2527.jpg',
-  '/wp-content/uploads/2022/05/IMG_2528.jpg',
+  '/wp-content/uploads/2022/05/all-product.jpg',
+  '/wp-content/uploads/2022/05/all-product.-2.jpg',
   '/wp-content/uploads/2022/04/Organic-Cereals-Banner-image-800x289-1.png'
 ];
 

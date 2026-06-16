@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 import HeroBanner from './components/HeroBanner';
 import ProductCard from './components/ProductCard';
 import CategoryIcons from './components/CategoryIcons';
+import Certifications from './components/Certifications';
+import Testimonials from './components/Testimonials';
 import styles from './page.module.css';
 import fs from "fs/promises";
 import path from "path";
@@ -23,6 +25,8 @@ export default async function Home() {
       <HeroBanner />
       
       <CategoryIcons />
+      <Certifications />
+      <Testimonials />
 
       <section className={styles.section}>
         <div className={styles.container}>
