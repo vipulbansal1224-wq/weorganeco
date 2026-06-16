@@ -48,12 +48,12 @@ export default async function RootLayout({
                 <ul>
                   {menuData.map((menu: any) => (
                     <li key={menu.id} className={menu.submenus && menu.submenus.length > 0 ? "has-submenu" : ""}>
-                      <Link href={menu.link}>{menu.title}</Link>
+                      <Link href={menu.path}>{menu.title}</Link>
                       {menu.submenus && menu.submenus.length > 0 && (
                         <ul className="submenu">
                           {menu.submenus.map((sub: any) => (
                             <li key={sub.id}>
-                              <Link href={sub.link}>{sub.title}</Link>
+                              <Link href={sub.path}>{sub.title}</Link>
                             </li>
                           ))}
                         </ul>

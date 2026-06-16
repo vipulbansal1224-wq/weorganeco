@@ -18,7 +18,7 @@ export default function Footer({ settings, menuData }: { settings: any, menuData
             <h3>Quick Links</h3>
             <ul>
               {menuData.slice(0, 5).map((menu: any) => (
-                <li key={menu.id}><Link href={menu.link}>{menu.title}</Link></li>
+                <li key={menu.id}><Link href={menu.path}>{menu.title}</Link></li>
               ))}
             </ul>
           </div>

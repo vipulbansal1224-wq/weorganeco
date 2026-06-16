@@ -17,14 +17,14 @@ export default async function ProductsPage() {
 
       <div className="container" style={{ padding: "4rem 2rem", minHeight: "50vh" }}>
         
-        {productsData.categories.map((cat: any) => {
-          const categoryProducts = productsData.products.filter((p: any) => p.categorySlug === cat.slug);
+        {(Array.from(new Set((productsData.products || []).map((p: any) => p.categoryTitle))) as string[]).map((cat: any) => {
+          const categoryProducts = productsData.products.filter((p: any) => p.categoryTitle === cat);
           
           if (categoryProducts.length === 0) return null;
 
           return (
-            <div key={cat.slug} style={{ marginBottom: "4rem" }}>
-              <h2 style={{ fontSize: "2rem", marginBottom: "2rem", borderBottom: "2px solid #e9f2eb", paddingBottom: "1rem" }}>{cat.title}</h2>
+            <div key={cat} style={{ marginBottom: "4rem" }}>
+              <h2 style={{ fontSize: "2rem", marginBottom: "2rem", borderBottom: "2px solid #e9f2eb", paddingBottom: "1rem" }}>{cat}</h2>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "2rem" }}>
                 {categoryProducts.map((p: any, i: number) => (
                   <div key={i} style={{ background: "#fff", borderRadius: "8px", overflow: "hidden", boxShadow: "0 4px 10px rgba(0,0,0,0.05)", border: "1px solid #f0f0f0" }}>

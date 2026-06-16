@@ -25,10 +25,8 @@ export default function AdminLayout({
               <Link href="/admin/products">Products</Link>
             </li>
             <li>
-              <Link href="/admin/news">News & Press</Link>
             </li>
             <li>
-              <Link href="/admin/faq">FAQ</Link>
             </li>
             <li>
               <Link href="/admin/settings">Global Settings</Link>
