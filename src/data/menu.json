@@ -1,26 +1,58 @@
 [
-  {
-    "id": "m1",
-    "title": "Home",
-    "link": "/",
-    "submenus": []
-  },
-  {
-    "id": "m2",
-    "title": "About Us",
-    "link": "/page/about-us",
-    "submenus": []
-  },
-  {
-    "id": "m3",
-    "title": "Our Products",
-    "link": "/products",
-    "submenus": []
-  },
-  {
-    "id": "m4",
-    "title": "Contact",
-    "link": "/page/contact",
-    "submenus": []
-  }
+    {
+        "title": "About",
+        "path": "\/page\/about"
+    },
+    {
+        "title": "Cart",
+        "path": "\/page\/cart"
+    },
+    {
+        "title": "Checkout",
+        "path": "\/page\/checkout"
+    },
+    {
+        "title": "Contact",
+        "path": "\/page\/contact"
+    },
+    {
+        "title": "Home",
+        "path": "\/page\/home"
+    },
+    {
+        "title": "My account",
+        "path": "\/page\/my-account"
+    },
+    {
+        "title": "Policies",
+        "path": "\/page\/policies"
+    },
+    {
+        "title": "Privacy",
+        "path": "\/page\/privacy-policy"
+    },
+    {
+        "title": "Privacy Policy",
+        "path": "\/page\/privacy-policy-2"
+    },
+    {
+        "title": "Products",
+        "path": "\/page\/shop"
+    },
+    {
+        "title": "Refund Policy",
+        "path": "\/page\/refund-policy"
+    },
+    {
+        "title": "Sample Page",
+        "path": "\/page\/sample-page"
+    },
+    {
+        "title": "Shipping & Delivery",
+        "path": "\/page\/shipping-delivery"
+    },
+    {
+        "title": "Terms & Conditions",
+        "path": "\/page\/terms-conditions"
+    }
 ]
