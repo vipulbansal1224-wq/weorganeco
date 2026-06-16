@@ -1,74 +1,59 @@
 import "./globals.css";
-import Link from "next/link";
-import fs from "fs/promises";
-import path from "path";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import styles from "./page.module.css";
 
-export default async function RootLayout({
+export const metadata = {
+  title: 'WeOrganeco - Organic Food Products',
+  description: 'Premium quality organic foods, rice, pulses, flours, and sugar.',
+};
+
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const menuPath = path.join(process.cwd(), "src/data/menu.json");
-  const settingsPath = path.join(process.cwd(), "src/data/settings.json");
-  let menuData: any = [];
-  let settings: any = {};
-  try {
-    const file = await fs.readFile(menuPath, "utf-8");
-    menuData = JSON.parse(file);
-    const sFile = await fs.readFile(settingsPath, "utf-8");
-    settings = JSON.parse(sFile);
-  } catch(e) {}
-
   return (
     <html lang="en">
       <body>
-        <header className="site-header">
-          {/* Top Bar */}
-          <div className="top-bar">
-            <div className="container top-bar-content">
-              <div className="top-left">100% Organic & Eco-Friendly</div>
-              <div className="top-right">
-                <span>Call Us: {settings.headerPhone || "+91 99999 99999"}</span>
-                <span>{settings.headerEmail || "info@weorganeco.com"}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Middle Bar */}
-          <div className="middle-bar container">
-            <div className="logo-container">
-              <Link href="/">
-                <img src={settings.logoUrl || "/placeholder-logo.png"} alt="WeOrganeco" className="header-logo" />
-              </Link>
-            </div>
-            
-            <div className="main-nav-container">
-              <nav className="main-nav">
-                <ul>
-                  {menuData.map((menu: any) => (
-                    <li key={menu.id} className={menu.submenus && menu.submenus.length > 0 ? "has-submenu" : ""}>
-                      <Link href={menu.path}>{menu.title}</Link>
-                      {menu.submenus && menu.submenus.length > 0 && (
-                        <ul className="submenu">
-                          {menu.submenus.map((sub: any) => (
-                            <li key={sub.id}>
-                              <Link href={sub.path}>{sub.title}</Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </header>
-
+        <Navbar />
+        
         {children}
 
-        <Footer settings={settings} menuData={menuData} />
+        <footer className={styles.footer}>
+          <div className={styles.container}>
+            <div className={styles.footerContent}>
+              <div className={styles.footerBrand}>
+                <img src="/wp-content/uploads/2022/04/weorganeco_logo-1.png" alt="WeOrganeco Logo" style={{ height: '50px', width: 'auto', marginBottom: '16px', borderRadius: '4px' }} />
+                <p style={{ maxWidth: '300px' }}>Right from farming to processing and packaging, we employ fair trade practices and high quality organic standards.</p>
+              </div>
+              <div style={{ flex: 1, marginLeft: '60px' }}>
+                <h4 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Contact Us</h4>
+                <p style={{ color: '#a0aec0', marginBottom: '8px' }}><strong>WeOrganeco</strong></p>
+                <p style={{ color: '#a0aec0', marginBottom: '8px' }}>Shed No.7, Mega Food Park, Ludhiana, Punjab - 141008</p>
+                <p style={{ color: '#a0aec0', marginBottom: '8px' }}>Phone: +91 7347400909</p>
+                <p style={{ color: '#a0aec0' }}>Email: contact@weorganeco.com</p>
+              </div>
+              <div style={{ flex: 1, marginLeft: '60px' }}>
+                <h4 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Send Enquiry</h4>
+                <form style={{ display: 'flex', gap: '8px', marginBottom: '24px' }}>
+                  <input type="email" placeholder="Your Email Address" style={{ padding: '12px', borderRadius: '4px', border: 'none', flex: 1, outline: 'none' }} />
+                  <button type="button" style={{ padding: '12px 24px', background: 'var(--primary)', color: 'white', border: 'none', borderRadius: '4px', fontWeight: 'bold', cursor: 'pointer' }}>Send</button>
+                </form>
+                
+                <h4 style={{ fontSize: '16px', color: 'white', marginBottom: '16px' }}>Follow Us</h4>
+                <div style={{ display: 'flex', gap: '16px' }}>
+                  <a href="#" style={{ color: 'white', background: '#333', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.597 1.323-1.324V1.325C24 .597 23.403 0 22.675 0z"/></svg>
+                  </a>
+                  <a href="#" style={{ color: 'white', background: '#333', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '50%' }}>
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p className={styles.copyright}>© 2026 WeOrganeco. All rights reserved. A Complete Organic Diet Store.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );

@@ -1,58 +1,44 @@
 [
     {
-        "title": "About",
-        "path": "\/page\/about"
-    },
-    {
-        "title": "Cart",
-        "path": "\/page\/cart"
-    },
-    {
-        "title": "Checkout",
-        "path": "\/page\/checkout"
-    },
-    {
-        "title": "Contact",
-        "path": "\/page\/contact"
-    },
-    {
+        "id": 1,
         "title": "Home",
-        "path": "\/page\/home"
+        "path": "/"
     },
     {
-        "title": "My account",
-        "path": "\/page\/my-account"
-    },
-    {
-        "title": "Policies",
-        "path": "\/page\/policies"
-    },
-    {
-        "title": "Privacy",
-        "path": "\/page\/privacy-policy"
-    },
-    {
-        "title": "Privacy Policy",
-        "path": "\/page\/privacy-policy-2"
-    },
-    {
+        "id": 2,
         "title": "Products",
-        "path": "\/page\/shop"
+        "path": "/products"
     },
     {
-        "title": "Refund Policy",
-        "path": "\/page\/refund-policy"
+        "id": 3,
+        "title": "Contact",
+        "path": "/page/contact"
     },
     {
-        "title": "Sample Page",
-        "path": "\/page\/sample-page"
-    },
-    {
-        "title": "Shipping & Delivery",
-        "path": "\/page\/shipping-delivery"
-    },
-    {
-        "title": "Terms & Conditions",
-        "path": "\/page\/terms-conditions"
+        "id": 4,
+        "title": "Policies",
+        "path": "#",
+        "submenus": [
+            {
+                "id": 41,
+                "title": "Privacy Policy",
+                "path": "/page/privacy-policy"
+            },
+            {
+                "id": 42,
+                "title": "Refund Policy",
+                "path": "/page/refund-policy"
+            },
+            {
+                "id": 43,
+                "title": "Shipping & Delivery",
+                "path": "/page/shipping-delivery"
+            },
+            {
+                "id": 44,
+                "title": "Terms & Conditions",
+                "path": "/page/terms-conditions"
+            }
+        ]
     }
 ]
