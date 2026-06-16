@@ -1,7 +1,7 @@
 import Link from "next/link";
 import fs from "fs/promises";
 import path from "path";
-import { ArrowRight, Leaf, ShieldCheck, Sprout } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default async function Home() {
   const productsPath = path.join(process.cwd(), "src/data/products.json");
@@ -11,117 +11,117 @@ export default async function Home() {
     productsData = JSON.parse(file);
   } catch(e) {}
 
+  const categories = [
+    { title: "Rice", img: "/wp-content/uploads/2022/05/rice-2.png", link: "/products/rice" },
+    { title: "Pulses", img: "/wp-content/uploads/2022/05/pulses.png", link: "/products/pulses" },
+    { title: "Flours", img: "/wp-content/uploads/2022/05/flours.png", link: "/products/flours" },
+    { title: "Sugar", img: "/wp-content/uploads/2022/05/sugar.png", link: "/products/sugar" },
+  ];
+
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-20" style={{
-        background: "linear-gradient(to right, rgba(20, 40, 25, 0.9) 0%, rgba(44, 94, 59, 0.7) 100%), url('/uploads/2022/05/IMG_4100.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed"
-      }}>
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="container relative z-10 px-6 mx-auto text-center">
-          <div className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-green-100 uppercase rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-            100% Certified Organic
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Pure Nature,<br/>
-            <span className="text-green-300 italic">Delivered to You.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-            Experience the true essence of nature with our premium range of organic products, cultivated with care for you and the environment.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/products" className="group relative inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-[#8a6c51] rounded-full hover:bg-[#7a5c41] hover:shadow-xl hover:shadow-[#8a6c51]/30 overflow-hidden">
-              <span className="relative z-10 flex items-center gap-2 uppercase tracking-wider">
-                Shop Collection <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Link>
-            <Link href="/page/about-us" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 rounded-full hover:bg-white/20 hover:shadow-xl uppercase tracking-wider">
-              Our Story
-            </Link>
-          </div>
-        </div>
-        
-        {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-          <svg className="relative block w-full h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,114.62,189.92,106.74A322.28,322.28,0,0,0,321.39,56.44Z" className="fill-[#fcfbfa]"></path>
-          </svg>
+      <section className="relative w-full overflow-hidden" style={{ minHeight: '80vh' }}>
+        <img 
+          src="/wp-content/uploads/2022/05/IMG_4100.jpg" 
+          alt="WeOrganeco" 
+          className="absolute inset-0 w-full h-full object-cover object-center" 
+        />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center text-center h-[80vh]">
+          {/* Using custom fonts or basic tailwind classes for the aesthetic */}
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-24 bg-[#fcfbfa]">
+      {/* Movement Section - 3 Images */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2c5e3b] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Why Choose WeOrganeco?</h2>
-            <div className="w-24 h-1 bg-[#8a6c51] mx-auto rounded-full"></div>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#2c5e3b] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Join The Organeco Movement!</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+              We must make organic the conventional choice and not the exception available only to the rich and educated.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
-            <div className="group p-8 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-20 h-20 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Leaf className="text-[#2c5e3b]" size={36} strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>100% Organic</h3>
-              <p className="text-gray-500 leading-relaxed">Certified organic products grown without harmful chemicals or synthetic pesticides.</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="overflow-hidden rounded-lg shadow-lg group">
+              <img src="/wp-content/uploads/2022/05/300x300-96-dpi-1.jpg" alt="Organic farming 1" className="w-full h-auto group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="group p-8 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-20 h-20 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Sprout className="text-[#2c5e3b]" size={36} strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>Eco-Friendly</h3>
-              <p className="text-gray-500 leading-relaxed">Sustainable farming practices that protect our soil and water for future generations.</p>
+            <div className="overflow-hidden rounded-lg shadow-lg group">
+              <img src="/wp-content/uploads/2022/05/300x300-96-dpi-2.jpg" alt="Organic farming 2" className="w-full h-auto group-hover:scale-105 transition-transform duration-500" />
             </div>
-            <div className="group p-8 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.1)] transition-all duration-300 hover:-translate-y-2 border border-gray-100">
-              <div className="w-20 h-20 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <ShieldCheck className="text-[#2c5e3b]" size={36} strokeWidth={1.5} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>Premium Quality</h3>
-              <p className="text-gray-500 leading-relaxed">Carefully selected and processed to ensure the highest nutritional value and taste.</p>
+            <div className="overflow-hidden rounded-lg shadow-lg group">
+              <img src="/wp-content/uploads/2022/05/300x300-96-dpi-3.jpg" alt="Organic farming 3" className="w-full h-auto group-hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Background Decorative Blob */}
-        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-green-50 blur-3xl opacity-60 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-orange-50 blur-3xl opacity-60 pointer-events-none"></div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#2c5e3b] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Our Bestsellers</h2>
-              <div className="w-24 h-1 bg-[#8a6c51] rounded-full"></div>
+      {/* Category Icons */}
+      <section className="py-16 bg-[#fcfbfa]">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-wrap justify-center gap-12 md:gap-24">
+            {categories.map((cat, i) => (
+              <div key={i} className="flex flex-col items-center group">
+                <div className="w-32 h-32 mb-6 bg-white rounded-full flex items-center justify-center shadow-lg group-hover:animate-pulse cursor-pointer transition-all duration-300">
+                  <img src={cat.img} alt={cat.title} className="w-16 h-16 object-contain" />
+                </div>
+                <Link href={cat.link} className="inline-block px-8 py-2 border-2 border-[#2c5e3b] text-[#2c5e3b] font-bold uppercase tracking-wider rounded-full hover:bg-[#2c5e3b] hover:text-white transition-colors">
+                  {cat.title}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Block */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+              <img src="/wp-content/uploads/2022/06/2.png" alt="About WeOrganeco" className="w-full max-w-md mx-auto" />
             </div>
-            <Link href="/products" className="inline-flex items-center gap-2 text-[#8a6c51] font-semibold hover:text-[#7a5c41] transition-colors group">
-              View All Products <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
+            <div className="md:w-1/2">
+              <h2 className="text-4xl font-bold text-[#2c5e3b] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>WE ARE <span className="text-[#8a6c51]">ORGANECO</span></h2>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Organeco is formed by a group of individuals who strongly believe in Organic Farming. We want to bring Organic to each and every table across the world and hence started this journey with exporting high quality organic foods to other countries from India.
+              </p>
+              <Link href="/about-us" className="inline-flex px-8 py-3 bg-[#2c5e3b] text-white font-bold uppercase rounded hover:bg-[#1a3d25] transition-colors">
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Best Selling Products */}
+      <section className="py-20 bg-[#f9f9f9]">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#2c5e3b] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Our Products</h2>
+            <div className="w-24 h-1 bg-[#8a6c51] mx-auto rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {productsData.products.slice(0, 4).map((p: any, i: number) => (
-              <div key={i} className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
-                <div className="relative h-[280px] overflow-hidden bg-gray-50 flex items-center justify-center p-6">
-                  <img src={p.img || "/placeholder.png"} alt={p.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
-                    <Link href="/products" className="px-6 py-2 bg-white text-gray-900 font-semibold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-lg">
-                      Quick View
-                    </Link>
-                  </div>
+            {productsData.products.slice(0, 8).map((p: any, i: number) => (
+              <div key={i} className="group bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col text-center">
+                <div className="relative h-[300px] overflow-hidden flex items-center justify-center p-4">
+                  <img src={p.img ? p.img.replace('http://localhost/wordpress', '') : "/placeholder.png"} alt={p.title} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6 flex-1 flex flex-col items-center text-center">
-                  <div className="text-xs font-bold text-[#8a6c51] tracking-widest uppercase mb-2">{p.categoryTitle || 'Organic'}</div>
-                  <h4 className="text-lg font-bold text-gray-900 mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>{p.title}</h4>
-                  <p className="text-gray-500 text-sm mb-4 line-clamp-2">{p.description}</p>
-                  <div className="mt-auto">
-                    <Link href="/products" className="text-[#2c5e3b] font-semibold border-b-2 border-transparent hover:border-[#8a6c51] pb-1 transition-colors">
-                      Discover
-                    </Link>
+                <div className="p-6 flex-1 flex flex-col items-center">
+                  <div className="flex gap-1 mb-3">
+                    {[1,2,3,4,5].map(star => (
+                      <span key={star} className="text-yellow-400 text-sm">★</span>
+                    ))}
                   </div>
+                  <h4 className="text-lg font-bold text-gray-900 mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>{p.title}</h4>
+                  <div className="text-[#2c5e3b] font-bold text-lg mb-4">
+                    {p.price ? `₹${p.price}` : 'Read more'}
+                  </div>
+                  <Link href={`/products/${p.slug}`} className="mt-auto px-6 py-2 border border-gray-300 text-gray-700 font-semibold uppercase text-xs tracking-wider hover:bg-[#2c5e3b] hover:text-white hover:border-[#2c5e3b] transition-all">
+                    Select Options
+                  </Link>
                 </div>
               </div>
             ))}

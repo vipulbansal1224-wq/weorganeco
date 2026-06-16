@@ -1,30 +1,34 @@
-import { NextResponse } from 'next/server';
-import { writeFile } from 'fs/promises';
-import path from 'path';
+import { NextResponse } from "next/server";
+import fs from "fs/promises";
+import path from "path";
 
-export async function POST(request: Request) {
+export async function POST(req: Request) {
   try {
-    const data = await request.formData();
-    const file: File | null = data.get('file') as unknown as File;
-
+    const formData = await req.formData();
+    const file = formData.get("file") as File;
+    
     if (!file) {
-      return NextResponse.json({ success: false, message: 'No file uploaded' }, { status: 400 });
+      return NextResponse.json({ error: "No file received." }, { status: 400 });
     }
 
-    const bytes = await file.arrayBuffer();
-    const buffer = Buffer.from(bytes);
+    const buffer = Buffer.from(await file.arrayBuffer());
+    const filename = Date.now() + "_" + file.name.replaceAll(" ", "_");
+    const dir = path.join(process.cwd(), "public", "uploads", "admin");
+    
+    try {
+      await fs.access(dir);
+    } catch (e) {
+      await fs.mkdir(dir, { recursive: true });
+    }
 
-    // Create a unique filename
-    const uniqueName = `${Date.now()}-${file.name.replace(/\s+/g, '-')}`;
-    const uploadDir = path.join(process.cwd(), 'public/uploads');
-    const filePath = path.join(uploadDir, uniqueName);
+    const filePath = path.join(dir, filename);
+    await fs.writeFile(filePath, buffer);
 
-    // Write file to public/uploads
-    await writeFile(filePath, buffer);
+    const fileUrl = `/uploads/admin/${filename}`;
 
-    return NextResponse.json({ success: true, url: `/uploads/${uniqueName}` });
+    return NextResponse.json({ url: fileUrl, success: true });
   } catch (error) {
-    console.error('Error uploading file:', error);
-    return NextResponse.json({ success: false, message: 'Upload failed' }, { status: 500 });
+    console.error("Upload error:", error);
+    return NextResponse.json({ error: "File upload failed." }, { status: 500 });
   }
 }
