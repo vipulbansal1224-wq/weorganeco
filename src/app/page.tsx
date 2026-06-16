@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import HeroBanner from './components/HeroBanner';
+import ComboOffers from './components/ComboOffers';
 import ProductCard from './components/ProductCard';
 import CategoryIcons from './components/CategoryIcons';
 import Certifications from './components/Certifications';
@@ -21,18 +22,21 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
-      
       <HeroBanner />
       
       <CategoryIcons />
+      
+      <ComboOffers />
+
       <Certifications />
       <Testimonials />
 
-      <section className={styles.section}>
+      {/* Featured Products */}
+      <section className={styles.section} style={{ background: '#FAFAF9' }}>
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Featured Products</h2>
-            <p className={styles.sectionSubtitle}>Handpicked premium quality organic foods</p>
+            <h2 className={styles.sectionTitle}>Best Sellers - Fresh from the Farm</h2>
+            <p className={styles.sectionSubtitle}>Handpicked premium organic products for your healthy lifestyle</p>
           </div>
           
           <div className={styles.grid}>

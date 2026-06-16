@@ -1,6 +1,62 @@
 {
     "products": [
         {
+            "title": "Moringa Instant Noodles (Murungai) 60g",
+            "description": "Premium Moringa Instant Noodles loaded with nutrients, protein, and dietary fiber. A healthy alternative to regular noodles, crafted with pure organic moringa leaves.",
+            "img": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=800&q=80",
+            "categorySlug": "noodles",
+            "categoryTitle": "Noodles"
+        },
+        {
+            "title": "Forest Honey (Malai Thean)",
+            "description": "Pure, unadulterated Forest Honey collected from deep woods. Rich in antioxidants and natural enzymes, offering a robust and earthy flavor profile.",
+            "img": "https://images.unsplash.com/photo-1587049352847-4d4b126a71e5?w=800&q=80",
+            "categorySlug": "honey",
+            "categoryTitle": "Honey"
+        },
+        {
+            "title": "Desi Cow Ghee (Kangayamnattu)",
+            "description": "Authentic Desi Cow Ghee prepared using the traditional Bilona method. Golden, aromatic, and packed with essential fatty acids for your daily health.",
+            "img": "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80",
+            "categorySlug": "ghee",
+            "categoryTitle": "Ghee"
+        },
+        {
+            "title": "Black Rice Instant Noodles 60g",
+            "description": "Delicious Black Rice Noodles (Karuppu Kavuni) rich in antioxidants and anthocyanins. Quick to cook and perfectly healthy for the whole family.",
+            "img": "https://images.unsplash.com/photo-1552611052-33e04de081de?w=800&q=80",
+            "categorySlug": "noodles",
+            "categoryTitle": "Noodles"
+        },
+        {
+            "title": "Organic Rose Gulkand",
+            "description": "Traditional sweet preserve of rose petals. A natural coolant that aids digestion and rejuvenates the body with its exquisite floral aroma.",
+            "img": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800&q=80",
+            "categorySlug": "sweets",
+            "categoryTitle": "Sweets"
+        },
+        {
+            "title": "Foxtail Millet Noodles 60g",
+            "description": "Healthy Foxtail Millet (Thinai) Noodles. Gluten-free, diabetic-friendly, and packed with complex carbohydrates for sustained energy.",
+            "img": "https://images.unsplash.com/photo-1590137785360-0322247fbdb3?w=800&q=80",
+            "categorySlug": "noodles",
+            "categoryTitle": "Noodles"
+        },
+        {
+            "title": "Pearl Millet Semiya (Kambu) 250g",
+            "description": "Nutritious Pearl Millet Vermicelli. Perfect for a healthy breakfast upma or sweet payasam. Rich in iron and highly digestible.",
+            "img": "https://images.unsplash.com/photo-1555126634-323283e090f1?w=800&q=80",
+            "categorySlug": "noodles",
+            "categoryTitle": "Noodles"
+        },
+        {
+            "title": "Special Forest Honey Combo",
+            "description": "A curated combo of wild, multi-floral forest honey. The perfect organic gift pack for health enthusiasts.",
+            "img": "https://images.unsplash.com/photo-1620189507195-68309c04c4d0?w=800&q=80",
+            "categorySlug": "honey",
+            "categoryTitle": "Honey"
+        },
+        {
             "title": "Organic Basmati Rice (White)",
             "description": "Organic White Basmati rice is a long-grain, fragrant rice that is used in most Middle Eastern dishes. It has a&hellip;",
             "img": "http:\/\/localhost\/wordpress\/wp-content\/uploads\/2018\/06\/basmati-rice-white-1.jpg",

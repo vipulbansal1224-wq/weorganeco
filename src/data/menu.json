@@ -6,36 +6,68 @@
     },
     {
         "id": 2,
-        "title": "Products",
+        "title": "Shop",
         "path": "/products"
     },
     {
         "id": 3,
+        "title": "Categories",
+        "path": "#",
+        "submenus": [
+            {
+                "id": 31,
+                "title": "Organic Noodles",
+                "path": "/products"
+            },
+            {
+                "id": 32,
+                "title": "Pure Honey",
+                "path": "/products"
+            },
+            {
+                "id": 33,
+                "title": "Desi Ghee",
+                "path": "/products"
+            },
+            {
+                "id": 34,
+                "title": "Traditional Grains",
+                "path": "/products"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "About Us",
+        "path": "/page/about-us"
+    },
+    {
+        "id": 5,
         "title": "Contact",
         "path": "/page/contact"
     },
     {
-        "id": 4,
+        "id": 6,
         "title": "Policies",
         "path": "#",
         "submenus": [
             {
-                "id": 41,
+                "id": 61,
                 "title": "Privacy Policy",
                 "path": "/page/privacy-policy"
             },
             {
-                "id": 42,
+                "id": 62,
                 "title": "Refund Policy",
                 "path": "/page/refund-policy"
             },
             {
-                "id": 43,
+                "id": 63,
                 "title": "Shipping & Delivery",
                 "path": "/page/shipping-delivery"
             },
             {
-                "id": 44,
+                "id": 64,
                 "title": "Terms & Conditions",
                 "path": "/page/terms-conditions"
             }
