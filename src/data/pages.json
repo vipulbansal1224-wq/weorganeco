@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "about-us",
+    "title": "About WeOrganeco",
+    "bannerImage": "",
+    "content": "<h2>Our Story</h2><p>We are dedicated to bringing you the best organic products.</p>"
+  },
+  {
+    "slug": "contact",
+    "title": "Contact Us",
+    "bannerImage": "",
+    "content": "<h2>Get In Touch</h2><p>Email us at info@weorganeco.com</p>"
+  }
+]

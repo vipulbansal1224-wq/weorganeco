@@ -1,0 +1,12 @@
+{
+  "categories": [
+    { "slug": "pulses", "title": "Organic Pulses" },
+    { "slug": "rice", "title": "Organic Rice" },
+    { "slug": "sugar", "title": "Organic Sugar" }
+  ],
+  "products": [
+    { "categorySlug": "pulses", "title": "Premium Organic Pulses", "img": "/uploads/2022/05/pulses.png", "description": "100% natural organic pulses." },
+    { "categorySlug": "rice", "title": "Premium Organic Rice", "img": "/uploads/2022/05/rice-2.png", "description": "100% natural organic rice." },
+    { "categorySlug": "sugar", "title": "Premium Organic Sugar", "img": "/uploads/2022/05/sugar.png", "description": "100% natural organic sugar." }
+  ]
+}
