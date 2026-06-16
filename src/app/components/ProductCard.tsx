@@ -7,7 +7,7 @@ export default function ProductCard({ product }: { product: any }) {
       <Link href={`/product/${product.slug}`} className={styles.imageLink}>
         <div className={styles.imageWrapper}>
           <img 
-            src={(product.img ? product.img.replace('http://localhost/wordpress', '') : '/placeholder.png')} 
+            src={product.img || '/placeholder.png'} 
             alt={product.title} 
             className={styles.image}
             loading="lazy"
