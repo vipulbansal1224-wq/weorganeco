@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --primary-green: #2c5e3b;
