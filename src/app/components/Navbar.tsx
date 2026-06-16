@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link href="/" className={styles.logo}>
-          <img src="/wp-content/uploads/2022/04/weorganeco_logo-1.png" alt="WeOrganeco Logo" style={{ height: '130px', width: 'auto' }} />
+          <img src="/wp-content/uploads/2022/04/weorganeco_logo-1.png" alt="WeOrganeco Logo" style={{ height: '110px', width: 'auto' }} />
         </Link>
         <div className={styles.navLinks}>
           <Link href="/" className={styles.link}>Home</Link>
